@@ -1,0 +1,11 @@
+on: [workflow_dispatch]
+
+jobs:
+  sample_job:
+    runs-on: ubuntu-latest
+    name: A job to run sample javascript action with build
+    steps:
+      - name: Sample Javascript action step
+        uses: PipelineTest-VP/sample-js-action@1.0.0
+        with:
+          message: 'Testing the sample javascript action'
